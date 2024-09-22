@@ -128,15 +128,14 @@ select {
   background-image: none;
   cursor: pointer;
   width: fit-content;
-  height: fit-content;
+  height: 19px;
 }
 
 /* Custom Select wrapper */
 .select {
   position: relative;
   display: flex;
-  width: auto;
-  height: 1em;
+  height: 19px;
   border-radius: 0.25em;
   overflow: hidden;
   -moz-text-align-last: center;
