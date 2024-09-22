@@ -123,12 +123,12 @@ select {
   box-shadow: none;
   /* Personalize */
   flex: 1;
-  padding: 0 1em;
   color: #fff;
   background-color: var(--darkgray);
   background-image: none;
   cursor: pointer;
-  width: 69px;
+  width: fit-content;
+  height: fit-content;
 }
 
 /* Custom Select wrapper */
