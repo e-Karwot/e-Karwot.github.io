@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
 .na {
   background: grey;
@@ -39,7 +38,7 @@
 
 .rwd-table {
   margin: 1em 0;
-  min-width: 300px;
+  min-width: 100px;
 }
 .rwd-table tr {
   border-top: 1px solid #ddd;
@@ -54,10 +53,10 @@
 .rwd-table td:before {
   content: attr(data-th) ": ";
   font-weight: bold;
-  width: 6.5em;
+  width: 1em;
   display: inline-block;
 }
-@media (min-width: 480px) {
+@media (min-width: 1px) {
   .rwd-table td:before {
     display: none;
   }
@@ -65,7 +64,7 @@
 .rwd-table th, .rwd-table td {
   text-align: left;
 }
-@media (min-width: 480px) {
+@media (min-width: 1px) {
   .rwd-table th, .rwd-table td {
     display: table-cell;
   }
@@ -96,7 +95,7 @@ h1 {
   background: #34495E;
   color: #000000;
   border-radius: 0.4em;
-  overflow: hidden;
+  overflow-x: auto;
 }
 .rwd-table tr {
   border-color: #46637f;
@@ -107,6 +106,7 @@ h1 {
 }
 .rwd-table th, .rwd-table td:before {
   color: #dd5;
+  font-size: small;
 }
 
 :root {
@@ -119,7 +119,6 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  outline: 10px red;
   border: 0;
   box-shadow: none;
   /* Personalize */
@@ -129,11 +128,7 @@ select {
   background-color: var(--darkgray);
   background-image: none;
   cursor: pointer;
-}
-
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none;
+  width: 69px;
 }
 
 /* Custom Select wrapper */
@@ -141,24 +136,10 @@ select::-ms-expand {
   position: relative;
   display: flex;
   width: auto;
-  height: 3em;
+  height: 1em;
   border-radius: 0.25em;
   overflow: hidden;
-}
-
-/* Arrow */
-.select::after {
-  content: "▼";
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1em;
-  background-color: #8f9aa7;
-  transition: 0.25s all ease;
-  pointer-events: none;
-}
-
-/* Transition */
-.select:hover::after {
-  color: #f39c12;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  width: 69px;
 }/*# sourceMappingURL=styles.css.map */

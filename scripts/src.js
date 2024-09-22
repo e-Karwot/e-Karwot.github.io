@@ -26,7 +26,7 @@ function populateSelectElement(selectElementId, data) {
   const selectElement = document.getElementById(selectElementId);
   const defaultOption = document.createElement("option");
   defaultOption.value = "N/A";
-  defaultOption.text = "Wybierz armię";
+  defaultOption.text = "Wybierz";
   defaultOption.hidden = true;
   selectElement.appendChild(defaultOption);
 
