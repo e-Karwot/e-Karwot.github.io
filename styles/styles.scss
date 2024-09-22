@@ -38,13 +38,14 @@ $breakpoint-alpha: 480px; // adjust to your needs
   top: 50%;
   left : 50%;
   transform :
-  translate(-50%,-50%); 
+  translate(-50%,-50%);
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .rwd-table {
   margin: 1em 0;
   min-width: 300px; // adjust to your needs
-  font-size: large;
   
   tr {
     border-top: 1px solid #ddd;
@@ -123,7 +124,6 @@ h1 {
   }
   th, td:before {
     color: #dd5;
-    font-size: x-large;
   }
 }
 
@@ -145,7 +145,6 @@ select {
   background-color: var(--darkgray);
   background-image: none;
   cursor: pointer;
-  font-size: medium;
 }
 /* Remove IE arrow */
 select::-ms-expand {
@@ -155,7 +154,7 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 12em;
+  width: auto;
   height: 3em;
   border-radius: .25em;
   overflow: hidden;
